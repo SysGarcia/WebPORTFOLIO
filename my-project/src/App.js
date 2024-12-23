@@ -5,10 +5,12 @@ import Work from './pages/Work';
 import Studies from './pages/Studies';
 import Skills from './pages/Skills';
 import Blog from './pages/Blog';
+import DottedBackground from './components/HeaderComponents/DotBackground'
 
 function App() {
   return (
     <Router>
+      <DottedBackground/>
       <Routes>
         <Route path="/" element={<About to="/about" replace />} />
         <Route path="/work" element={<Work />} />

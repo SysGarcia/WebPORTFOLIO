@@ -9,7 +9,6 @@ function Contact() {
   return (
     <div>
       <TopBar current_page={current_page} /> 
-      <HeroSection />
     </div>
   );
 }
