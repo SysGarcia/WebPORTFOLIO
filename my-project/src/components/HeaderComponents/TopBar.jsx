@@ -9,7 +9,7 @@ const TopBar = ({ current_page }) => {
     // Diccionario de traducciones
     const translations = {
         en: {
-            title: "Change Language Example",
+            title: "Isaac García 🌑",
             about: "About me",
             work: "Work Experience",
             studies: "Studies",
@@ -18,7 +18,7 @@ const TopBar = ({ current_page }) => {
             contact: "Contact",
         },
         es: {
-            title: "Ejemplo de Cambio de Idioma",
+            title: "Isaac García 🌒",
             about: "Sobre mí",
             work: "Experiencia laboral",
             studies: "Estudios",
