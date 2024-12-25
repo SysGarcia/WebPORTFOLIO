@@ -34,7 +34,6 @@ const Formacion = [
   {
     dateRange: "08 Septiembre 2023 - Actualidad",
     title: "Grado en Administración de sistemas informáticos en red.",
-    link: "https://site.educa.madrid.org/ies.jovellanos.fuenlabrada/",
     description: "Cursando el Grado Superior en Administración de Sistemas Informáticos en Red en la siguiente dirección: Calle Móstoles, 64, 28941 Fuenlabrada, Madrid.",
     study: true,
   },
@@ -42,7 +41,6 @@ const Formacion = [
   {
     dateRange: "08 septiembre 2021 - 21	junio 2023",
     title: "Bachillerato de Ciencias y Tecnología.",
-    link: "https://site.educa.madrid.org/ies.carpediem.fuenlabrada/",
     description: "Bachillerato completado en el instituto Carpe Diem ubicado en: Av. de Nuevo Versalles, 6, 28942 Fuenlabrada, Madrid ",
     study: true,
   },

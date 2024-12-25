@@ -35,7 +35,7 @@ const TimeFrame: React.FC<Props> = ({ items }) => {
           <h3 className="text-lg font-normal text-text_primary gap-x-2 flex justify-normal items-center">
             {item.work && (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 min-w-5 min-h-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 220.168 220.168"
                 fill="currentColor"
@@ -45,7 +45,7 @@ const TimeFrame: React.FC<Props> = ({ items }) => {
             )}
             {item.study && (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 min-w-5 min-h-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
                 fill="currentColor"
