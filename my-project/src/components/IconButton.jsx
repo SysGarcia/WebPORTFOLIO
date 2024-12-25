@@ -25,7 +25,7 @@ export default function IconButton({ children, text, color, site, downloadable, 
         style={{ width: hovered ? ref.current?.offsetWidth || 0 : 0 }}
         className="overflow-x-hidden transition-all duration-300 ease-out"
       >
-        <span ref={ref} className="px-1.5 font-semibold text-text_primary">
+        <span ref={ref} className="px-1.5 font-semibold text-text_primary text-sm">
           {text}
         </span>
       </div>
@@ -47,7 +47,7 @@ export default function IconButton({ children, text, color, site, downloadable, 
         style={{ width: hovered ? ref.current?.offsetWidth || 0 : 0 }}
         className="overflow-x-hidden transition-all duration-300 ease-out"
       >
-        <span ref={ref} className="px-1.5 font-semibold text-text_primary">
+        <span ref={ref} className="px-1.5 font-semibold text-text_primary text-sm">
           {text}
         </span>
       </div>

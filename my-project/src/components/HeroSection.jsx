@@ -6,7 +6,7 @@ import Isaac_img from "../Assets/IsaacGarcia.jpg"
 
 const HeroSection = () => {
     return (
-        <div className="mt-20">
+        <div className="mt-48">
             <div class="flex flex-col lg:flex-row gap-x-4 mb-2 lg:mb-4">
                 <div class="flex">
                     <img

@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 body{
-    background: #111;
+    background: #0e0e0e;
     font-family: 'Poppins', sans-serif;
 }
 /*IDEA https://codepen.io/BlogFire/pen/VwqoXLw*/
 
 .text-gradient {
-    background: linear-gradient(90deg, #6ee7a4, #48c7b2);
+    background: linear-gradient(90deg, #6a72cf, #5d69e3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
