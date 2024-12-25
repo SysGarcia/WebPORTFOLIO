@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Agrega esta línea para importar Lin
 
 const NavItem = ({ name, link }) => {
     return (
-        <li className="hover:text-yellow-300 transition-colors duration-500 text-[13px] ">
+        <li className="hover:text-button_primary transition-colors duration-500 text-[13px] ">
             <Link to={link}>{name}</Link>
         </li>
     );
