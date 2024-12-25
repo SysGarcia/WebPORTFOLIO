@@ -60,7 +60,7 @@ const TimeFrame: React.FC<Props> = ({ items }) => {
           </h3>
 
           {item.link && (
-            <h4 className="text-sm font-normal underline text-button_terciary">
+            <h4 className="text-sm font-normal underline text-button_terciary break-words">
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 {item.link}
               </a>
