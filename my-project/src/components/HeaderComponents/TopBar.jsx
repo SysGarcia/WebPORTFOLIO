@@ -82,7 +82,7 @@ const TopBar = ({ current_page }) => {
                 </h2>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden mr-6">
+                <div className="header:hidden mr-6">
                     <button onClick={toggleMenu} aria-label="Toggle navigation menu">
                         <svg
                             width="32px"
@@ -104,7 +104,7 @@ const TopBar = ({ current_page }) => {
 
                 {/* Mobile Menu */}
                 <nav
-                    className={`md:hidden fixed top-0 right-0 h-full bg-bg_primary z-50 transform transition-transform duration-300 ease-in-out ${
+                    className={`header:hidden fixed top-0 right-0 h-full bg-bg_primary z-50 transform transition-transform duration-300 ease-in-out ${
                         menuOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
                     style={{ width: '73%' }}
@@ -116,7 +116,7 @@ const TopBar = ({ current_page }) => {
                     >
                         ✕
                     </button>
-                    <ul className="h-svh flex md:hidden flex-col justify-center items-center gap-2 text-lg text-text_primary">
+                    <ul className="h-svh flex header:hidden flex-col justify-center items-center gap-2 text-lg text-text_primary">
                         <NavItemHamMenu id="about" link="/" name="Sobre mí" current={current_page} icon='<svg class="fill-text_primary" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7,22 C5.34314575,22 4,20.6568542 4,19 L4,13 L3,13 C2.10909515,13 1.66292836,11.9228581 2.29289322,11.2928932 L11.2928932,2.29289322 C11.6834175,1.90236893 12.3165825,1.90236893 12.7071068,2.29289322 L21.7071068,11.2928932 C22.3370716,11.9228581 21.8909049,13 21,13 L20,13 L20,19 C20,20.6568542 18.6568542,22 17,22 L7,22 Z M12,4.41421356 L5.35091163,11.0633019 C5.73009945,11.2054205 6,11.5711909 6,12 L6,19 C6,19.5522847 6.44771525,20 7,20 L8.99999525,19.999 L9,16 C9,14.8954305 9.8954305,14 11,14 L13,14 C14.1045695,14 15,14.8954305 15,16 L14.9999952,19.999 L17,20 C17.5522847,20 18,19.5522847 18,19 L18,12 C18,11.5711909 18.2699006,11.2054205 18.6490884,11.0633019 L12,4.41421356 Z M12.9999952,16 L10.9999952,16 L10.9999952,19.999 L12.9999952,19.999 L12.9999952,16 Z"/></svg>'/>
                         <NavItemHamMenu id="work" link="/work" name="Experiencia Laboral" current={current_page}  icon='<svg width="20px" height="20px" viewBox="0 0 0.72 0.72" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="stroke-text_primary" d="M0.12 0.36H0.09V0.24a0.06 0.06 0 0 1 0.06 -0.06h0.12m-0.15 0.18v0.18a0.06 0.06 0 0 0 0.06 0.06h0.36a0.06 0.06 0 0 0 0.06 -0.06v-0.18M0.12 0.36h0.18m0.3 0h0.03V0.24a0.06 0.06 0 0 0 -0.06 -0.06h-0.12m0.15 0.18h-0.18m0 0v-0.06h-0.12v0.06m0.12 0v0.06h-0.12v-0.06M0.27 0.18V0.15a0.06 0.06 0 0 1 0.06 -0.06h0.06a0.06 0.06 0 0 1 0.06 0.06v0.03M0.27 0.18h0.18" stroke-width="0.06" stroke-linecap="round" stroke-linejoin="round"/></svg>' />
                         <NavItemHamMenu id="studies" link="/studies" name="Formación" current={current_page}  icon='<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="14" r="4" class="stroke-text_primary" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle class="stroke-text_primary" cx="18" cy="14" r="4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="stroke-text_primary" d="M10 14L10.2111 13.8944C11.3373 13.3314 12.6627 13.3314 13.7889 13.8944L14 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="stroke-text_primary" d="M19 6L21.8383 12.6227C21.945 12.8716 22 13.1397 22 13.4105V14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 6L2.16171 12.6227C2.05502 12.8716 2 13.1397 2 13.4105V14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'/>
@@ -127,7 +127,7 @@ const TopBar = ({ current_page }) => {
                 </nav>
 
                 {/* Desktop Menu */}
-                <ul className="hidden md:flex items-center gap-6 mr-6">
+                <ul className="hidden header:flex items-center gap-6 mr-6">
                     <NavItem id="about_mobile" link="/" name="Sobre mí"/>
                     <NavItem id="work_mobile" link="/work" name="Experiencia Laboral"/>
                     <NavItem id="studies_mobile" link="/studies" name="Formación "/>

@@ -16,6 +16,9 @@ module.exports = {
         button_secondary: '#5d69e3',
         button_terciary: '#54d4b4'
       },
+      screens: {
+        'header': '850px',
+      }
     },
   },
   plugins: [require('flowbite/plugin')],
