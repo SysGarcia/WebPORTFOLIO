@@ -104,7 +104,7 @@ const TopBar = ({ current_page }) => {
 
                 {/* Mobile Menu */}
                 <nav
-                    className={`header:hidden fixed top-0 right-0 h-full bg-bg_primary z-50 transform transition-transform duration-300 ease-in-out ${
+                    className={`header:hidden fixed top-0 right-0 h-svh bg-bg_primary z-50 transform transition-transform duration-300 ease-in-out ${
                         menuOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
                     style={{ width: '73%' }}
