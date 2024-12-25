@@ -22,21 +22,20 @@ const TimeFrame: React.FC<Props> = ({ items }) => {
       {items.map((item, index) => (
         <li key={index} className="mb-10 ms-4">
           <div
-            className="absolute w-3 h-3 mt-0 border-button_secondary bg-button_primary border light_dot"
+            className="absolute w-3 h-3 mt-0 border-button_secondary bg-button_primary border"
             style={{ insetInlineStart: "-0.38rem" }}
           />
           <time
-            className="mb-1 text-sm leading-none text-button_secondary light_span"
+            className="mb-1 text-sm leading-none text-button_secondary "
             style={{ display: "inherit" }}
           >
             {item.dateRange}
           </time>
-
-          <h3 className="text-lg font-normal text-text_primary black_text title-container flex items-center gap-x-2">
-            {item.title}
+          <div class="flex gap-y-2 flex-col">
+          <h3 className="text-lg font-normal text-text_primary gap-x-2 flex justify-normal items-center">
             {item.work && (
               <svg
-                className="w-5 h-5 suitcaseicon_light inline"
+                className="w-5 h-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 220.168 220.168"
                 fill="currentColor"
@@ -46,30 +45,32 @@ const TimeFrame: React.FC<Props> = ({ items }) => {
             )}
             {item.study && (
               <svg
-                className="w-5 h-5 inline"
+                className="w-5 h-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
                 fill="currentColor"
               >
                 <path
-                  className="bookicon_light"
+                  
                   d="M5 0C3.34315 0 2 1.34315 2 3V13C2 14.6569 3.34315 16 5 16H14V14H4V12H14V0H5Z"
                 />
               </svg>
             )}
+            {item.title}
           </h3>
 
           {item.link && (
-            <h4 className="text-sm font-normal blue_links underline text-button_terciary">
+            <h4 className="text-sm font-normal underline text-button_terciary">
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 {item.link}
               </a>
             </h4>
           )}
 
-          <p className="text-sm text-text_secondary black_text_inside">
+          <p className="text-sm text-text_secondary">
             {item.description}
           </p>
+          </div>
         </li>
       ))}
     </ol>
