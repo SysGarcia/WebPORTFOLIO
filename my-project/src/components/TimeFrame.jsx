@@ -13,17 +13,17 @@ interface Props {
   items: Item[];
 }
 
-const TimeFrame: React.FC<Props> = ({ items }) => {
+const TimeFrame: React.FC<Props> = ({ items, className }) => {
   return (
     <ol
-      className="relative border-s border-button_secondary mt-6 ml-3"
+      className='relative border-s border-button_secondary mt-6 ml-3'
       id="side-bar-studies"
     >
       {items.map((item, index) => (
-        <li key={index} className="mb-10 ms-4">
+        <li key={index} className={`mb-10 ms-4 ${className}`}>
           <div
             className="absolute w-3 h-3 mt-0 border-button_secondary bg-button_primary border"
-            style={{ insetInlineStart: "-0.38rem" }}
+            style={{ insetInlineStart: "-1.4rem" }}
           />
           <time
             className="mb-1 text-sm leading-none text-button_secondary "

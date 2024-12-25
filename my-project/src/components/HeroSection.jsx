@@ -4,9 +4,9 @@ import IconButton from "./IconButton";
 import cvFile from "../Assets/García_Durán_Isaac_CV.pdf";
 import Isaac_img from "../Assets/IsaacGarcia.jpg"
 
-const HeroSection = () => {
+const HeroSection = ({id, className}) => {
     return (
-        <div className="mt-48">
+        <div className={`mt-48 ${className}`} id={id}>
             <div class="flex flex-col lg:flex-row gap-x-4 mb-2 lg:mb-4">
                 <div class="flex">
                     <img
