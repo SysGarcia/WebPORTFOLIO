@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image3D from '../Assets/3dImage.png'
 
 const blogPost = {
-  title: "Tengo un Blog!",
+  title: "No es todo, y es que tengo un Blog!",
   excerpt: "Descubre más sobre mí, conoce mis proyectos y mis pensamientos, y explora algunos de mis artículos, donde comparto mis conocimientos y reflexiones sobre diversos temas.",
   imageUrl: Image3D,
 };
@@ -16,13 +16,12 @@ export default function BlogHero() {
     <section className="py-7 px-4 p-2 my-2 overflow-hidden mt-4">
       <div className="max-w-6xl mx-auto relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Contenido del blog */}
           <div className="space-y-6 relative z-10">
             <h2 className="text-4xl font-bold text-text_primary leading-tight">{blogPost.title}</h2>
             <p className="text-lg text-text_secondary">{blogPost.excerpt}</p>
             <div className="flex items-center space-x-4">
               <a 
-                href="#" 
+                href="/Blog" 
                 className="px-6 py-2 bg-button_secondary text-text_primary rounded-full inline-flex items-center space-x-2 hover:bg-button_primary transition duration-300"
                 aria-label="Leer más sobre el blog"
                 onMouseEnter={() => setIsHovered(true)}

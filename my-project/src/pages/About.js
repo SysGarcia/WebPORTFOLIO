@@ -145,11 +145,6 @@ function About() {
             </div>
           </section>
           <section id="blog">
-            <Title
-              id="Titulo_Blog"
-              title="Blog"
-              icon='<svg class="fill-text_primary" width="24px" height="24px" viewBox="0 0 2.88 2.88" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M0.36 2.16a0.36 0.36 0 1 0 0.36 0.36 0.36 0.36 0 0 0 -0.36 -0.36"/><path d="M0.36 1.08a0.18 0.18 0 0 0 0 0.36 1.081 1.081 0 0 1 1.08 1.08 0.18 0.18 0 0 0 0.36 0 1.441 1.441 0 0 0 -1.44 -1.44"/><path d="M0.36 0a0.18 0.18 0 0 0 0 0.36 2.162 2.162 0 0 1 2.16 2.16 0.18 0.18 0 0 0 0.36 0A2.523 2.523 0 0 0 0.36 0"/></g></svg>'
-              className="fade-in-delayed_rapid"/>
             <BlogHero/>
             </section>
         </div>
