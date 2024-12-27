@@ -44,7 +44,7 @@ export default function BlogHero() {
                 alt="Imagen representativa del blog"
                 width={500}
                 height={300}
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                className="rounded-lg w-full h-auto object-cover bg-button_primary/20"
               />
             </div>
           </div>
