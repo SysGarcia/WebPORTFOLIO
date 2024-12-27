@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import DottedBackground from './components/HeaderComponents/DotBackground'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
         <DottedBackground/>
         <Routes>
           <Route path="/" element={<About to="/about" replace />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
+        <Footer/>
       </Router>
   );
 }

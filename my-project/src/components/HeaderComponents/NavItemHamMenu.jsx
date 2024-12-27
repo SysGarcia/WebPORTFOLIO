@@ -30,7 +30,7 @@ const NavItemHamMenu = ({ name, icon, link }) => {
 
     return (
         <li
-            className={`flex w-full items-center hover:text-yellow-300 transition-colors duration-500 text-[13px] gap-x-4 ${
+            className={`flex w-full items-center hover:text-button_primary transition-colors duration-500 text-[13px] gap-x-4 ${
                 location.pathname === link ? "bg-[#ffffff13]" : ""
             }`} // Compara la ruta actual con el link
         >

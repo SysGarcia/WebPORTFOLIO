@@ -6,6 +6,18 @@ import TimeFrame from '../components/TimeFrame';
 import '../index.css'
 import TitleForBranch from '../components/TitleForBranch';
 import IconBatch from '../components/IconBatch';
+import BatchWrapper from '../components/BatchWrapper';
+import BlogHero from '../components/BlogHero'
+
+import { FaDocker, FaWindows, FaLinux, FaReact, FaHtml5, FaCss3Alt, FaNpm, FaGitAlt } from "react-icons/fa";
+import { SiVirtualbox, SiAstro, SiGnubash  } from "react-icons/si";
+import { GrVmware } from "react-icons/gr";
+import { RiTailwindCssFill,RiJavaLine, RiPhpLine   } from "react-icons/ri";
+import { AiOutlinePython } from "react-icons/ai";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BsFiletypeXml } from "react-icons/bs";
+import { TbJson } from "react-icons/tb";
+import { PiFileSqlFill } from "react-icons/pi";
 
 const Experiencia = [
   {
@@ -88,20 +100,58 @@ function About() {
               id="Titulo_Habilidades"
               title="Habilidades"
               icon='<svg width="24px" height="24px" class="fill-text_primary" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><path d="M5,19H1c-0.6,0-1-0.4-1-1v-7c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v7C6,18.6,5.6,19,5,19z M2,17h2v-5H2V17z"/><path d="M11,6H9C8.4,6,8,6.4,8,7v11c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V7C12,6.4,11.6,6,11,6z"/><path d="M19,19h-4c-0.6,0-1-0.4-1-1V2c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v16C20,18.6,19.6,19,19,19z M16,17h2V3h-2V17z"/></svg>'
-              className="fade-in-delayed_rapid"
-            />
-            <TitleForBranch title="Operative Systems"/>
-            <IconBatch>
-              <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4875 4875"><path fill="#0078d4" d="M0 0h2311v2310H0zm2564 0h2311v2310H2564zM0 2564h2311v2311H0zm2564 0h2311v2311H2564"/></svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="-.557 117.607 598.543 423.631" width="28px"><g fill="#0091e2"><path d="m592.162 277.804c-1.664-1.37-16.642-12.597-48.815-12.597-8.321 0-16.92.822-25.24 2.191-6.102-41.898-41.327-62.162-42.714-63.257l-8.598-4.93-5.547 7.942c-6.934 10.68-12.204 22.729-15.255 35.052-5.824 23.824-2.219 46.279 9.985 65.447-14.7 8.216-38.553 10.133-43.545 10.406h-393.853c-10.262 0-18.583 8.216-18.583 18.348-.554 33.956 5.27 67.912 17.197 99.951 13.59 35.052 33.838 61.067 59.91 76.95 29.4 17.799 77.383 27.931 131.468 27.931 24.408 0 48.815-2.19 72.946-6.572 33.56-6.025 65.734-17.526 95.412-34.23a260.485 260.485 0 0 0 64.902-52.577c31.342-34.778 49.925-73.663 63.515-108.167h5.547c34.116 0 55.195-13.418 66.844-24.92 7.766-7.12 13.59-15.882 17.751-25.74l2.497-7.12z"/><path d="m55.193 306.83h52.698c2.497 0 4.716-1.916 4.716-4.654v-46.553c0-2.465-1.942-4.655-4.716-4.655h-52.698c-2.496 0-4.715 1.916-4.715 4.655v46.553c.277 2.738 2.219 4.655 4.715 4.655zm72.668 0h52.699c2.496 0 4.715-1.916 4.715-4.654v-46.553c0-2.465-1.942-4.655-4.715-4.655h-52.7c-2.496 0-4.715 1.916-4.715 4.655v46.553c.278 2.738 2.22 4.655 4.715 4.655m74.055 0h52.699c2.496 0 4.715-1.917 4.715-4.655v-46.553c0-2.465-1.942-4.655-4.715-4.655h-52.699c-2.496 0-4.715 1.916-4.715 4.655v46.553c0 2.738 1.942 4.655 4.715 4.655zm72.946 0h52.699c2.496 0 4.715-1.917 4.715-4.655v-46.553c0-2.465-1.942-4.655-4.715-4.655h-52.699c-2.496 0-4.715 1.916-4.715 4.655v46.553c0 2.738 2.219 4.655 4.715 4.655zm-147-66.543h52.698c2.496 0 4.715-2.19 4.715-4.655v-46.553c0-2.465-1.942-4.656-4.715-4.656h-52.699c-2.496 0-4.715 1.917-4.715 4.656v46.553c.278 2.464 2.22 4.655 4.715 4.655m74.055 0h52.699c2.496 0 4.715-2.19 4.715-4.655v-46.553c0-2.465-1.942-4.656-4.715-4.656h-52.699c-2.496 0-4.715 1.917-4.715 4.656v46.553c0 2.464 1.942 4.655 4.715 4.655m72.946 0h52.699c2.496 0 4.715-2.19 4.715-4.655v-46.553c0-2.465-2.22-4.656-4.715-4.656h-52.699c-2.496 0-4.715 1.917-4.715 4.656v46.553c0 2.464 2.219 4.655 4.715 4.655m0-66.817h52.699c2.496 0 4.715-1.917 4.715-4.655v-46.553c0-2.465-2.22-4.656-4.715-4.656h-52.699c-2.496 0-4.715 1.917-4.715 4.656v46.553c0 2.464 2.219 4.655 4.715 4.655m73.5 133.36h52.699c2.496 0 4.715-1.917 4.715-4.655v-46.553c0-2.465-1.941-4.655-4.715-4.655h-52.698c-2.497 0-4.716 1.916-4.716 4.655v46.553c.278 2.738 2.22 4.655 4.716 4.655"/></g></svg></li>
-
-            </IconBatch>
-            <TitleForBranch title="Frontend"/>
-            <TitleForBranch title="Backend"/>
-            <TitleForBranch title="Programming"/>
-            <TitleForBranch title="Technologies"/>
-            <TitleForBranch title="Others"/>
+              className="fade-in-delayed_rapid"/>
+            <div className='bg-[#18181883] p-3 rounded-lg mt-5 border border-white/10 fade-in-delayed'>
+              <BatchWrapper>
+                <TitleForBranch title="Sistemas"/>
+                  <IconBatch>
+                    <li><FaWindows size={32} /></li>
+                    <li><FaDocker size={32}/></li>
+                    <li><FaLinux size={32}/></li>
+                    <li><SiVirtualbox size={32}/></li>
+                    <li><GrVmware size={32}/></li>
+                  </IconBatch>
+              </BatchWrapper>
+              <BatchWrapper>
+                <TitleForBranch title="Desarrollo Web"/>
+                  <IconBatch>
+                    <li><FaReact size={32}/></li>
+                    <li><SiAstro size={32}/></li>
+                    <li><FaHtml5 size={32}/></li>
+                    <li><FaCss3Alt size={32}/></li>
+                    <li><IoLogoJavascript size={32}/></li>
+                    <li><RiTailwindCssFill size={32}/></li>
+                    <li><RiPhpLine size={32}/></li>
+                    <li><BsFiletypeXml size={32}/></li>
+                    <li><PiFileSqlFill size={32}/></li>
+                  </IconBatch>
+                  </BatchWrapper>
+              <BatchWrapper>
+              <TitleForBranch title="Programación"/>
+                <IconBatch>
+                  <li><AiOutlinePython size={32}/></li>
+                  <li><SiGnubash size={32}/></li>
+                  <li><RiJavaLine size={32}/></li>
+                </IconBatch>
+              </BatchWrapper>
+              <BatchWrapper>
+              <TitleForBranch title="Tecnologías"/>
+                <IconBatch>
+                  <li><TbJson size={32}/></li>
+                  <li><FaNpm size={32}/></li>
+                  <li><FaGitAlt size={32}/></li>
+                </IconBatch>
+              </BatchWrapper>
+            </div>
           </section>
+          <section id="blog">
+            <Title
+              id="Titulo_Blog"
+              title="Blog"
+              icon='<svg class="fill-text_primary" width="24px" height="24px" viewBox="0 0 2.88 2.88" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M0.36 2.16a0.36 0.36 0 1 0 0.36 0.36 0.36 0.36 0 0 0 -0.36 -0.36"/><path d="M0.36 1.08a0.18 0.18 0 0 0 0 0.36 1.081 1.081 0 0 1 1.08 1.08 0.18 0.18 0 0 0 0.36 0 1.441 1.441 0 0 0 -1.44 -1.44"/><path d="M0.36 0a0.18 0.18 0 0 0 0 0.36 2.162 2.162 0 0 1 2.16 2.16 0.18 0.18 0 0 0 0.36 0A2.523 2.523 0 0 0 0.36 0"/></g></svg>'
+              className="fade-in-delayed_rapid"/>
+            <BlogHero/>
+            </section>
         </div>
       </div>
     </main>
