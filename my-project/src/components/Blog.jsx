@@ -23,7 +23,7 @@ export function Blog({className}) {
               <div className="flex items-center space-x-4">
                 <a 
                   href="/Blog" 
-                  className="px-6 py-2 bg-button_secondary text-text_primary rounded-full inline-flex items-center space-x-2 hover:bg-button_primary transition duration-300"
+                  className="px-6 py-2 bg-button_secondary text-text_primary rounded-lg inline-flex items-center space-x-2 hover:bg-button_primary transition duration-300"
                   aria-label="Leer más sobre el blog"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
