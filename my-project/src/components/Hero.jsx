@@ -1,12 +1,11 @@
 import Pill from "./Pill";
-import '../index.css'
 import IconButton from "./IconButton";
 import cvFile from "../Assets/García_Durán_Isaac_CV.pdf";
 import Isaac_img from "../Assets/IsaacGarcia.jpg"
 
-const HeroSection = ({id, className}) => {
+export const Hero = ({className}) => {
     return (
-        <div className={`mt-48 ${className}`} id={id}>
+        <section className={`mt-48 ${className}`}>
             <div class="flex flex-col lg:flex-row gap-x-4 mb-2 lg:mb-4">
                 <div class="flex">
                     <img
@@ -39,8 +38,7 @@ const HeroSection = ({id, className}) => {
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-text_primary" viewBox="0 0 24 24"><circle cx="4.983" cy="5.009" r="2.188"/><path d="m9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904h3.771v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0h3.775v12.139h-3.775z"/></svg>                
                 </IconButton>
                 </div>
-        </div>
+        </section>
     );
 };
 
-export default HeroSection;

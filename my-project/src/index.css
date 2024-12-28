@@ -30,23 +30,17 @@ body{
     }
   }
   
-  /* Aplica la animación a los elementos */
   .fade-in {
     opacity: 0;
-    animation: slideInFromTop 0.8s ease-out forwards;
+    transform: translateY(30px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   
-  .fade-in-delayed_rapid {
-    opacity: 0;
-    animation: slideInFromTop 1.3s ease-out forwards;
-  }
-
-  .fade-in-delayed {
-    opacity: 0;
-    animation: slideInFromTop 1.5s ease-out forwards;
+  .fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  /* Añadir retrasos diferentes para cada item en cascada */
   .fade-in-delayed:nth-child(1) {
     animation-delay: 0.1s;
   }
@@ -59,6 +53,7 @@ body{
     animation-delay: 0.3s;
   }
   
-  /* Añadir más retrasos según sea necesario */
-  
+  .fade-in-delayed:nth-child(4) {
+    animation-delay: 0.4s;
+  }
   

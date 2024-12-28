@@ -7,7 +7,7 @@ const Title = ({id, icon, title, className }) => {
     ) : null;
     
     return (
-        <div className={`flex flex-row items-center mt-8 ${className}`}>
+        <div className={`flex flex-row items-center ${className}`}>
             {renderIcon}
             <h1 id={id} className="text-3xl font-semibold ml-2">{title}</h1>
         </div>
