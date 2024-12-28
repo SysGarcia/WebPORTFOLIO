@@ -1,7 +1,7 @@
 import Pill from "./Pill";
 import IconButton from "./IconButton";
-import cvFile from "../Assets/García_Durán_Isaac_CV.pdf";
-import Isaac_img from "../Assets/IsaacGarcia.jpg"
+import cvFile from "../../Assets/García_Durán_Isaac_CV.pdf";
+import Isaac_img from "../../Assets/IsaacGarcia.jpg"
 
 export const Hero = ({className}) => {
     return (

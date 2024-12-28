@@ -1,7 +1,7 @@
-import TitleForBranch from '../components/TitleForBranch';
-import IconBatch from '../components/IconBatch';
-import BatchWrapper from '../components/BatchWrapper';
-import Title from '../components/Title';
+import TitleForBranch from './TitleForBranch';
+import IconBatch from './IconBatch';
+import BatchWrapper from './BatchWrapper';
+import Title from '../Shared/Title';
 
 import { 
     FaDocker, FaWindows, FaLinux, FaReact, FaHtml5, FaCss3Alt, FaNpm, FaGitAlt 

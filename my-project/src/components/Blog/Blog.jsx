@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import Image3D from '../Assets/3dImage.png'
+import Image3D from '../../Assets/3dImage.png'
 
 const blogPost = {
   title: "No es todo, y es que tengo un Blog!",
@@ -14,7 +14,7 @@ export function Blog({className}) {
 
   return (
     <section className={`${className}`} id="blog">
-      <div className='py-6 px-4 p-2 my-2 overflow-hidden mt-6'>
+      <div className='py-12 px-4 p-2 my-2 overflow-visible'>
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6 relative z-10">
@@ -38,16 +38,23 @@ export function Blog({className}) {
             
             {/* Imagen del blog */}
             <div className="relative mt-10 md:mt-0">
-              <div className="absolute inset-0 bg-button_secondary rounded-lg transform rotate-3"></div>
-              <div className={`relative z-10 transition-transform duration-300 ease-in-out ${isHovered ? '-translate-y-2' : ''}`}>
-              <img
-                src={blogPost.imageUrl}
-                alt="Imagen representativa del blog"
-                width={500}
-                height={300}
-                className="rounded-lg w-full h-auto object-cover bg-button_primary/20"
-                loading="lazy"
-              />
+            <div className="absolute inset-0 bg-button_secondary rounded-lg transform rotate-3 z-[9998]"></div>
+              <div className="absolute inset-0 bg-button_secondary/10 rounded-lg transform rotate-12 z-[9997]"></div>
+              <div
+                className={`relative z-[9999] transition-transform duration-300 ${
+                  isHovered ? ' translate-y-[-5px]' : ''
+                }`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <img
+                  src={blogPost.imageUrl}
+                  alt="Imagen representativa del blog"
+                  width={500}
+                  height={300}
+                  className="rounded-lg w-full h-auto object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

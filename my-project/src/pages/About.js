@@ -2,12 +2,12 @@ import React from 'react';
 import '../index.css';
 import useFadeIn from '../Hooks/UseFadeIn';
 
-import { Hero } from '../components/Hero';
-import { Blog } from '../components/Blog';
-import { Skills } from '../components/Skills';
-import { Work } from '../components/Work';
-import { Studies } from '../components/Studies';
-import { Projects } from '../components/Projects.jsx';
+import { Hero } from '../components/Hero/Hero.jsx';
+import { Blog } from '../components/Blog/Blog.jsx';
+import { Skills } from '../components/Skills/Skills.jsx';
+import { Work } from '../components/Work/Work.jsx';
+import { Studies } from '../components/Studies/Studies.jsx';
+import { Projects } from '../components/Projects/Projects.jsx';
 
 const About = () => {
   useFadeIn();
@@ -16,8 +16,8 @@ const About = () => {
           <Hero className="fade-in" />
           <Work className="fade-in" />
           <Studies className="fade-in" />
-          <Skills className="fade-in" />
           <Projects className="fade-in" />
+          <Skills className="fade-in" />
           <Blog className="fade-in" />
       </div>
   );

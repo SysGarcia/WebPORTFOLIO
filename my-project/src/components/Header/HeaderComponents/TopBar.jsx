@@ -145,17 +145,18 @@ const TopBar = ({ current_page }) => {
             icon='<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="14" r="4" class="stroke-text_primary" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle class="stroke-text_primary" cx="18" cy="14" r="4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="stroke-text_primary" d="M10 14L10.2111 13.8944C11.3373 13.3314 12.6627 13.3314 13.7889 13.8944L14 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="stroke-text_primary" d="M19 6L21.8383 12.6227C21.945 12.8716 22 13.1397 22 13.4105V14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 6L2.16171 12.6227C2.05502 12.8716 2 13.1397 2 13.4105V14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
           />
           <NavItemHamMenu
-            link={current_page === "/blog" ? "/" : "#skills"}
-            name="Habilidades"
-            current={current_page}
-            icon='<svg class="fill-text_primary" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><path d="M5,19H1c-0.6,0-1-0.4-1-1v-7c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v7C6,18.6,5.6,19,5,19z M2,17h2v-5H2V17z"/><path d="M11,6H9C8.4,6,8,6.4,8,7v11c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V7C12,6.4,11.6,6,11,6z"/><path d="M19,19h-4c-0.6,0-1-0.4-1-1V2c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v16C20,18.6,19.6,19,19,19z M16,17h2V3h-2V17z"/></svg>'
-          />
-        <NavItemHamMenu
             link={current_page === "/blog" ? "/" : "#projects"}
             name="Proyectos"
             current={current_page}
             icon='<svg class="fill-text_primary" width="19px" height="19px" viewBox="0 -0.06 0.6 0.6" xmlns="http://www.w3.org/2000/svg"> <path d="M.382.002A.03.03 0 0 1 .4.043L.256.459C.25.475.233.484.218.478A.03.03 0 0 1 .2.437L.344.021C.35.005.367-.004.382.002m-.31.246L.178.36a.033.033 0 0 1 0 .045.03.03 0 0 1-.042 0L.009.27a.033.033 0 0 1 0-.045L.136.091a.03.03 0 0 1 .042 0 .033.033 0 0 1 0 .045zm.455 0L.421.136a.033.033 0 0 1 0-.045.03.03 0 0 1 .042 0L.59.225a.033.033 0 0 1 0 .045L.463.404a.03.03 0 0 1-.042 0 .033.033 0 0 1 0-.045z"/> </svg>'
           />
+          <NavItemHamMenu
+            link={current_page === "/blog" ? "/" : "#skills"}
+            name="Habilidades"
+            current={current_page}
+            icon='<svg class="fill-text_primary" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><path d="M5,19H1c-0.6,0-1-0.4-1-1v-7c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v7C6,18.6,5.6,19,5,19z M2,17h2v-5H2V17z"/><path d="M11,6H9C8.4,6,8,6.4,8,7v11c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V7C12,6.4,11.6,6,11,6z"/><path d="M19,19h-4c-0.6,0-1-0.4-1-1V2c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v16C20,18.6,19.6,19,19,19z M16,17h2V3h-2V17z"/></svg>'
+          />
+
           <NavItemHamMenu
             link={current_page === "/blog" ? "/blog" : "#blog"}
             name="Blog"
@@ -186,12 +187,12 @@ const TopBar = ({ current_page }) => {
           name="Formación"
         />
         <NavItem
-          link={current_page === "/blog" ? "/" : "#skills"}
-          name="Habilidades"
-        />
-        <NavItem
           link={current_page === "/blog" ? "/" : "#projects"}
           name="Proyectos"
+        />
+        <NavItem
+          link={current_page === "/blog" ? "/" : "#skills"}
+          name="Habilidades"
         />
         <NavItem
           link={current_page === "/blog" ? "/blog" : "#blog"}

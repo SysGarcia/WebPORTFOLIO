@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBar from '../components/HeaderComponents/TopBar'; // Asegúrate de que la ruta sea correcta
+import TopBar from '../components/Header/HeaderComponents/TopBar'; // Asegúrate de que la ruta sea correcta
 
 function Blog() {
   // Establece el valor de current_page según la ruta activa

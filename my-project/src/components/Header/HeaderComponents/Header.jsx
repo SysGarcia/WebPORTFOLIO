@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from './TopBar'
-import DotBackground from './DotBackground'
+import DotBackground from '../../DotBackground'
 
 const Header = () => {
 
