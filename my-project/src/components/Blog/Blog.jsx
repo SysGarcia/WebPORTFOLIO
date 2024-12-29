@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image3D from '../../Assets/3dImage.png'
 
 const blogPost = {
-  title: "No es todo, y es que tengo un Blog!",
+  title: "¡No es todo, y es que tengo un Blog!",
   excerpt: "Descubre más sobre mí, conoce mis proyectos y mis pensamientos, y explora algunos de mis artículos, donde comparto mis conocimientos y reflexiones sobre diversos temas.",
   imageUrl: Image3D,
 };
