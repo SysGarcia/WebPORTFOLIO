@@ -1,7 +1,7 @@
 [
   {
     "title": "Json Converter",
-    "image": "/projects/Proyecto1.png",
+    "image": "Proyecto1.png",
     "video": null,
     "description": "Conversor de Json extraído de Instagram a texto plano.",
     "githubLink": "https://github.com/project-one",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Web Bastardos",
-    "image": "/projects/Proyecto3.png",
+    "image": "/Proyecto3.png",
     "video": null,
     "description": "Web de la serie Bastardos de Samuel Fernández López.",
     "githubLink": "https://github.com/SysGarcia/bastardos-v2",
@@ -18,7 +18,7 @@
   {
     "title": "Este Portfolio!",
     "image": null,
-    "video": "/projects/Proyecto2.mp4",
+    "video": "/Proyecto2.mp4",
     "description": "Mi portfolio web donde comparto mis ideas y quién soy.",
     "githubLink": "https://github.com/SysGarcia/WebPORTFOLIO",
     "techStack": ["React", "Tailwind CSS", "JavaScript"]
