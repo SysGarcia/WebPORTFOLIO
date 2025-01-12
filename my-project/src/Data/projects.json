@@ -1,7 +1,7 @@
 [
   {
     "title": "Json Converter",
-    "image": "Proyecto1.png",
+    "image": "/Proyecto1.png",
     "video": null,
     "description": "Conversor de Json extraído de Instagram a texto plano.",
     "githubLink": "https://github.com/project-one",
